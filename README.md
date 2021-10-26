@@ -1,3 +1,61 @@
 # swift-sequences
 
-A description of this package.
+**Sequences** is a package for the Swift programming language.
+
+## Contents
+
+The package currently provides the following implementations:
+
+## Installation
+
+To use this package in a SwiftPM project:
+
+1. Add it to the dependencies in your `Package.swift` file:
+
+```swift
+let package = Package(
+    ...
+    dependencies: [
+        .package(url: "https://github.com/alexandrehsaad/swift-sequences.git", branch: "main")
+    ],
+    ...
+)
+```
+
+2. Add it as a dependency for your target in your `Package.swift` file:
+
+```swift
+let package = Package(
+    ...
+    targets: [
+        .target(name: "MyTarget", dependencies: [
+            .product(name: "Sequences", package: "swift-sequences")
+        ]),
+    ],
+    ...
+)
+```
+
+3. Import the package in your source code.
+
+```swift
+import Sequences
+```
+
+## Contribution
+
+### Reporting a bug
+
+If you find a bug, please open a bug report.
+
+### Contacting the maintainers
+
+The current code owner of this package is Alexandre H. Saad ([@alexandrehsaad](https://github.com/alexandrehsaad)). You can contact him by writing an email to alexandresaad at icloud dot com.
+
+## Supporting
+
+If you like our work, show your support by staring this repository.
+
+## Feedback
+
+We would love to hear your thoughts or feedback on how we can improve Swift Sequences!
