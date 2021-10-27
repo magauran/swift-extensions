@@ -1,10 +1,10 @@
 # swift-sequences
 
-**Sequences** is a package containing extensions to the sequence protocols for the Swift programming language.
+**Sequences** is a package containing extensions to the collection protocols for the Swift programming language.
 
 ## Contents
 
-The package currently provides the following implementations:
+The package currently provides the following extensions:
 
 **BidirectionalCollection**
 
