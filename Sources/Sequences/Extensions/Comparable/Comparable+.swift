@@ -9,8 +9,8 @@ extension Comparable {
 	/// Returns a boolean value indicating whether this value is within a specified closed range.
 	///
 	/// ```swift
-	/// let number: Int = 5
-	/// print(number.isWithin(0...9))
+	/// let number: Int = 2
+	/// print(number.isWithin(1...3))
 	/// // Prints "true"
 	/// ```
 	///
@@ -23,8 +23,8 @@ extension Comparable {
 	/// Returns a boolean value indicating whether this value is within two specified values.
 	///
 	/// ```swift
-	/// let number: Int = 5
-	/// print(number.isWithin(0, to: 9))
+	/// let number: Int = 2
+	/// print(number.isWithin(1, to: 3))
 	/// // Prints "true"
 	/// ```
 	///

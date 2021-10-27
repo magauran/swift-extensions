@@ -1,10 +1,49 @@
 # swift-sequences
 
-**Sequences** is a package for the Swift programming language.
+**Sequences** is a package containing extensions to the sequence protocols for the Swift programming language.
 
 ## Contents
 
 The package currently provides the following implementations:
+
+### BidirectionalCollection
+
+- `lastIndex`: The position of the last element in this collection.
+
+### CaseIterable
+
+- `index`: The position of this case in its enumaration.
+- `next()`: Returns the bottom adjacent case in its enumeration.
+- `previous()`: Returns the top adjacent case in its enumeration.
+
+### Collection
+
+- `firstIndex`: The position of the first element in this collection.
+- `indices(where:)`: Returns an array containing, in order, the elements in this collection that satisfy the given predicate.
+
+### Comparable
+
+- `isWithin(_:)`: Returns a boolean value indicating whether this value is within a specified closed range.
+- `isWithin(_:to:)`: Returns a boolean value indicating whether this value is within two specified values.
+
+### MutableCollection
+
+- `replace(where:with:)`: Replaces the elements of this collection that satisfies the given predicate.
+- `replaceFirst(with:)`: Replaces the first element in this collection with the specified replacement.
+- `replaceLast(with:)`: Replaces the last element in this collection with the specified replacement.
+
+### RangeReplaceableCollection
+
+- `removeFirst(where:)`: Removes and returns the first element in this collection that satisfies the given predicate.
+- `removeLast(where:)`: Removes and returns the last element in this collection that satisfies the given predicate.
+- `removeRandomElement()`: Removes and returns a random element from this collection.
+
+### Sequence
+
+- `anySatisfy(where:)`: Returns a boolean value indicating whether any element in this sequence satisfies the given predicate.
+- `noneSatisfy(where:)`: Returns a boolean value indicating whether no element in this sequence satisfies the given predicate.
+- `contains(contentsOf:)`: Returns a boolean value indicating whether this sequence contains the specified elements.
+- `count(where:)`: Returns the total number of times the elements in this sequence satisfies the given predicate.
 
 ## Installation
 
