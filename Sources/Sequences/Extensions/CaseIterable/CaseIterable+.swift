@@ -8,10 +8,10 @@
 extension CaseIterable
 where Self: Equatable {
 	/// The position of this case in its enumaration.
-	public var index: Self.AllCases.Index {
+	public var index: Self.AllCases.Index? {
 		return Self.allCases.firstIndex(where: {
 			self == $0
-		})!
+		})
 	}
 }
 
