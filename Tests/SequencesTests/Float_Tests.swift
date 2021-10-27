@@ -11,7 +11,7 @@ import XCTest
 final class Array_Tests: XCTestCase {
 	func test_firstIndex_Fails() {
 		// Given
-		let collection: Array<Int> = []
+		let collection: [UInt] = []
 		
 		// Then
 		XCTAssertEqual(collection.startIndex, 0)
@@ -20,7 +20,7 @@ final class Array_Tests: XCTestCase {
 	
 	func test_firstIndex_Succeeds() {
 		// Given
-		let collection: Array<Int> = [10, 20, 30, 40, 50]
+		let collection: [UInt] = [10, 20, 30, 40, 50]
 		
 		// Then
 		XCTAssertEqual(collection.startIndex, 0)
@@ -29,7 +29,7 @@ final class Array_Tests: XCTestCase {
 	
 	func test_lastIndex_Fails() {
 		// Given
-		let collection: Array<Int> = []
+		let collection: [UInt] = []
 		
 		// Then
 		XCTAssertEqual(collection.lastIndex, nil)
@@ -38,7 +38,7 @@ final class Array_Tests: XCTestCase {
 	
 	func test_lastIndex_Succeeds() {
 		// Given
-		let collection: Array<Int> = [10, 20, 30, 40, 50]
+		let collection: [UInt] = [10, 20, 30, 40, 50]
 		
 		// Then
 		XCTAssertEqual(collection.lastIndex, 4)
