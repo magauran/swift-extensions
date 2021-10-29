@@ -9,7 +9,8 @@ import XCTest
 @testable import Sequences
 
 final class Sorted_Tests: XCTestCase {
-	@Sorted(by: <) fileprivate var values: [Int] = [1, 3, 2]
+	@Sorted(by: <)
+	fileprivate var values: [Int] = [1, 3, 2]
 	
 	func test_clamped_succeeds() {
 		XCTAssertEqual(self.values, [1, 2, 3])
