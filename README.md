@@ -1,6 +1,6 @@
-# swift-sequences
+# swift-extensions
 
-**Sequences** is a package containing extensions to the collection protocols for the Swift programming language.
+**Extensions** is a package containing extensions to the collection protocols for the Swift programming language.
 
 ## Contents
 
@@ -55,7 +55,7 @@ To use this package in a SwiftPM project:
 let package = Package(
     ...
     dependencies: [
-        .package(url: "https://github.com/alexandrehsaad/swift-sequences.git", branch: "main")
+        .package(url: "https://github.com/alexandrehsaad/swift-extensions.git", branch: "main")
     ],
     ...
 )
@@ -68,7 +68,7 @@ let package = Package(
     ...
     targets: [
         .target(name: "MyTarget", dependencies: [
-            .product(name: "Sequences", package: "swift-sequences")
+            .product(name: "Extensions", package: "swift-extensions")
         ]),
     ],
     ...
@@ -78,7 +78,7 @@ let package = Package(
 3. Import the package in your source code.
 
 ```swift
-import Sequences
+import Extensions
 ```
 
 ## Contribution
@@ -97,4 +97,4 @@ If you like our work, show your support by staring this repository.
 
 ## Feedback
 
-We would love to hear your thoughts or feedback on how we can improve Swift Sequences!
+We would love to hear your thoughts or feedback on how we can improve Swift Extensions!

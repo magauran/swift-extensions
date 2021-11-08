@@ -3,12 +3,12 @@
 import PackageDescription
 
 let package = Package(
-	name: "swift-sequences",
+	name: "swift-extensions",
 	defaultLocalization: "en",
 	products: [
-		.library(name: "Sequences", targets: ["Sequences"])
+		.library(name: "Extensions", targets: ["Extensions"])
 	], targets: [
-		.target(name: "Sequences", dependencies: []),
-		.testTarget(name: "SequencesTests", dependencies: ["Sequences"]),
+		.target(name: "Extensions", dependencies: []),
+		.testTarget(name: "ExtensionsTests", dependencies: ["Extensions"]),
 	], swiftLanguageVersions: [.version("5.5")]
 )
