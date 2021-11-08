@@ -4,7 +4,9 @@
 
 ## Contents
 
-The package currently provides the following extensions:
+The package currently provides the following implementations:
+
+### Extensions
 
 **BidirectionalCollection**
 
@@ -44,6 +46,20 @@ The package currently provides the following extensions:
 - `noneSatisfy(where:)`: Returns a boolean value indicating whether no element in this sequence satisfies the given predicate.
 - `contains(contentsOf:)`: Returns a boolean value indicating whether this sequence contains the specified elements.
 - `count(where:)`: Returns the total number of times the elements in this sequence satisfies the given predicate.
+
+### Objects
+
+**HTTPStatusCode**: A representation of a HTTP status code.
+
+- Conforms to `Comparable`, `CustomStringConvertible`, `CustomDebugStringConvertible`, `Hashable`.
+
+**HTTPStatusType**: A representation of a HTTP status type.
+
+- Conforms to `CustomStringConvertible`.
+
+### Property Wrappers
+
+**`Sorted`**: A property wrapper that keeps an array sorted to a specified predicate.
 
 ## Installation
 
