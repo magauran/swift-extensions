@@ -1,6 +1,6 @@
 # swift-extensions
 
-**Extensions** is a package containing extensions to the collection protocols for the Swift programming language.
+**Extensions** is a package containing extensions for the Swift programming language.
 
 ## Contents
 
