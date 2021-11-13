@@ -6,7 +6,7 @@
 //
 
 import XCTest
-@testable import Arithmetics
+@testable import Extensions
 
 final class Int_Tests: XCTestCase {
 	func test_fibonacci_Succeeds() {
