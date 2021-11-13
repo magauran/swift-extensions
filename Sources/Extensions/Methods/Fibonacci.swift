@@ -5,14 +5,14 @@
 // Licensed under Apache License v2.0 with Runtime Library Exception
 //
 
-/// Returns fibonnaci numbers starting from zero.
+/// Returns the fibonnaci sequence.
 ///
 /// ```swift
 /// print(fibonacci(9))
 /// // Prints "[0, 1, 1, 2, 3, 5, 8, 13, 21, 34]"
 /// ```
 ///
-/// - Parameter numbers: The number of numbers.
+/// - Parameter numbers: The length of the sequnce.
 /// - Returns: The fibonacci sequence.
 public func fibonacci<Value>(_ count: Array.Index) -> [Value]
 where Value: Comparable & Numeric & Strideable, Value.Stride: SignedInteger {
