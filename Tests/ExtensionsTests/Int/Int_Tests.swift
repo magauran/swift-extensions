@@ -11,7 +11,7 @@ import XCTest
 final class Int_Tests: XCTestCase {
 	func test_fibonacci_Succeeds() {
 		// Given
-		let sequence: [Int] = fibonacci(9)
+		let sequence: [Int] = fibonacci(10)
 		
 		// Then
 		XCTAssertEqual(sequence, [0, 1, 1, 2, 3, 5, 8, 13, 21, 34])

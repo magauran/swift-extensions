@@ -5,14 +5,14 @@
 // Licensed under Apache License v2.0 with Runtime Library Exception
 //
 
-/// Returns the fibonnaci sequence.
+/// Returns the fibonnaci sequence with the specified length.
 ///
 /// ```swift
-/// print(fibonacci(9))
+/// print(fibonacci(10))
 /// // Prints "[0, 1, 1, 2, 3, 5, 8, 13, 21, 34]"
 /// ```
 ///
-/// - Parameter numbers: The length of the sequnce.
+/// - Parameter count: The length of the sequnce.
 /// - Returns: The fibonacci sequence.
 public func fibonacci<Value>(_ count: Array.Index) -> [Value]
 where Value: Comparable & Numeric & Strideable, Value.Stride: SignedInteger {
@@ -22,8 +22,11 @@ where Value: Comparable & Numeric & Strideable, Value.Stride: SignedInteger {
 	
 	var sequence: [Value] = [0, 1]
 
-	for index in 2...count {
-		sequence.append(sequence[index - 1] + sequence[index - 2])
+	for _ in 2..<count {
+		if let lhs: Value = sequence.secondLast,
+		   let rhs: Value = sequence.last {
+			sequence.append(lhs + rhs)
+		}
 	}
 	
 	return sequence
