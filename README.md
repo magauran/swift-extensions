@@ -47,6 +47,11 @@ The package currently provides the following implementations:
 - `contains(contentsOf:)`: Returns a boolean value indicating whether this sequence contains the specified elements.
 - `count(where:)`: Returns the total number of times the elements in this sequence satisfies the given predicate.
 
+**StringProtocol**
+
+- `uppercasedFirst()`: Returns this instance with the first character uppercased.
+- `lowercasedFirst()`: Returns this instance with the first character lowercased.
+
 ### Objects
 
 **HTTPStatusCode**: A representation of a HTTP status code.
