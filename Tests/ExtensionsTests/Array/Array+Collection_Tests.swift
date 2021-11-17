@@ -72,6 +72,6 @@ extension Array_Tests {
 		let collection: [UInt] = [10, 20, 30, 40, 50]
 		
 		// Then
-		XCTAssertEqual(collection.after(50), 10)
+		XCTAssertEqual(collection.after(10), 20)
 	}
 }

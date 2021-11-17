@@ -86,23 +86,22 @@ where Self.Element: Hashable {
 	///
 	/// ```swift
 	/// let collection: [UInt] = [10, 20, 30, 40, 50]
-	/// print(collection.before(10))
-	/// // Prints "50"
+	/// print(collection.before(50))
+	/// // Prints "40"
 	/// ```
 	///
 	/// - Returns: The previous element.
 	func before(_ element: Self.Element) -> Self.Element? {
-		let startIndex: Self.Index = self.startIndex
-		let endIndex: Self.Index = self.endIndex
-		
 		guard let index = self.firstIndex(of: element) else {
 			return nil
 		}
 		
 		let previousIndex: Self.Index = self.index(before: index)
 		
-		return self[previousIndex < startIndex ?
-			self.index(before: endIndex) : previousIndex
-		]
+		guard self.startIndex < previousIndex else {
+			return nil
+		}
+		
+		return self[previousIndex]
 	}
 }
