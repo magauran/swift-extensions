@@ -90,7 +90,7 @@ where Self.Element: Hashable {
 	/// ```
 	///
 	/// - Returns: The previous element.
-	func before(_ element: Self.Element) -> Self.Element? {
+	public func before(_ element: Self.Element) -> Self.Element? {
 		guard let index = self.firstIndex(of: element) else {
 			return nil
 		}

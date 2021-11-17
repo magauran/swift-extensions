@@ -113,7 +113,7 @@ where Self.Element: Hashable {
 	/// ```
 	///
 	/// - Returns: The next element.
-	func after(_ element: Self.Element) -> Self.Element? {
+	public func after(_ element: Self.Element) -> Self.Element? {
 		guard let index = self.firstIndex(of: element) else {
 			return nil
 		}
