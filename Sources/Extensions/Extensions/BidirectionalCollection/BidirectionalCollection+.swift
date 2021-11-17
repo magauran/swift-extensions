@@ -18,7 +18,7 @@ extension BidirectionalCollection {
 		return self.indices.index(self.endIndex, offsetBy: -1, limitedBy: self.startIndex) as? Int
 	}
 	
-	/// The position of the second element in this collection.
+	/// The position of the second last element in this collection.
 	/// If the collection doesn't contain two elements, the value of this property is nil.
 	///
 	/// ```swift
