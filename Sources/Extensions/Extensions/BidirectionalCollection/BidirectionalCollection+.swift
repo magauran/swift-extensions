@@ -82,7 +82,6 @@ extension BidirectionalCollection {
 extension BidirectionalCollection
 where Self.Element: Hashable {
 	/// Returns the element before the specified element in this collection.
-	/// If there's no element before, it returns the last element.
 	///
 	/// ```swift
 	/// let collection: [UInt] = [10, 20, 30, 40, 50]
