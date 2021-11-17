@@ -32,7 +32,7 @@ where Self: Equatable, AllCases: BidirectionalCollection {
 	public func next() -> Self {
 		let allCases: Self.AllCases = Self.allCases
 		let startIndex: Self.AllCases.Index = allCases.startIndex
-		let endIndex: Self.AllCases.Index = allCases.startIndex
+		let endIndex: Self.AllCases.Index = allCases.endIndex
 		let index: Self.AllCases.Index = allCases.firstIndex(of: self)!
 		let nextIndex: Self.AllCases.Index = allCases.index(after: index)
 		
@@ -56,7 +56,7 @@ where Self: Equatable, AllCases: BidirectionalCollection {
 	public func previous() -> Self {
 		let allCases: Self.AllCases = Self.allCases
 		let startIndex: Self.AllCases.Index = allCases.startIndex
-		let endIndex: Self.AllCases.Index = allCases.startIndex
+		let endIndex: Self.AllCases.Index = allCases.endIndex
 		let index: Self.AllCases.Index = allCases.firstIndex(of: self)!
 		let previousIndex: Self.AllCases.Index = allCases.index(before: index)
 		
