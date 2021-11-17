@@ -101,3 +101,31 @@ extension Collection {
 		return self[index]
 	}
 }
+
+extension Collection
+where Self.Element: Hashable {
+	/// Returns the element after the specified element in this collection.
+	/// If there's no element after, it returns the first element.
+	///
+	/// ```swift
+	/// let collection: [UInt] = [10, 20, 30, 40, 50]
+	/// print(collection.after(50))
+	/// // Prints "10"
+	/// ```
+	///
+	/// - Returns: The next element.
+	func after(_ element: Self.Element) -> Self.Element? {
+		let startIndex: Self.Index = self.startIndex
+		let endIndex: Self.Index = self.endIndex
+		
+		guard let index = self.firstIndex(of: element) else {
+			return nil
+		}
+		
+		let nextIndex: Self.Index = self.index(after: index)
+		
+		return self[nextIndex == endIndex ?
+			startIndex : nextIndex
+		]
+	}
+}

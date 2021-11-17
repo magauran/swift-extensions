@@ -66,4 +66,12 @@ extension Array_Tests {
 		XCTAssertEqual(collection.thirdLast, 30)
 		XCTAssertEqual(collection.endIndex, 5)
 	}
+	
+	func test_before_Succeeds() {
+		// Given
+		let collection: [UInt] = [10, 20, 30, 40, 50]
+		
+		// Then
+		XCTAssertEqual(collection.before(10), 50)
+	}
 }

@@ -11,6 +11,7 @@ The package currently provides the following implementations:
 **BidirectionalCollection**
 
 - `lastIndex`: The position of the last element in this collection.
+- `before(_:)`: Returns the element before the specified element in this collection.
 
 **CaseIterable**
 
@@ -22,6 +23,7 @@ The package currently provides the following implementations:
 
 - `firstIndex`: The position of the first element in this collection.
 - `indices(where:)`: Returns an array containing, in order, the elements in this collection that satisfy the given predicate.
+- `after(_:)`: Returns the element after the specified element in this collection.
 
 **Comparable**
 
